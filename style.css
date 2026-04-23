@@ -1,0 +1,28 @@
+:root{
+    --espaciado: 5px;
+    --primary-color: #3498db;
+}
+main{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+.sidebar{
+    background-color: var(--primary-color);
+    height: 100vh;
+    color: white;
+}
+.contenido{
+    background-color: khaki;
+}
+.menu{
+    grid-column: 1 / 3;
+    text-align: center;
+    background-color: lightsalmon;
+}
+.footer{
+    grid-column 1/3;
+    text-align: center;
+    background-color: coral;
+
+}
