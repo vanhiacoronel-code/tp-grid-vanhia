@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            display: grid;
+            height: 100vh;
+
+            grid-template-columns: 200px 1fr 1fr;
+            grid-template-rows: 100px 1fr 100px;
+            /*definimos las areas*/
+            grid-template-areas: 
+             "head head head"
+             "side  s1   s3"
+             "side  s1   s4"
+             "side  s2   s5"
+             "foot foot foot"
+            ;
+            gap:10px;
+        }
+        header{
+            grid-column: foot;
+            text-align: center;
+            background-color: coral;
+            color: white;
+            fornt-size: 2em; 
+        }
+        .sidebar{
+            grid-area: side;
+            background-color: rgb(5, 5, 5) 
+            color:aliceblue;
+            text-align:  center;
+            height: 80dvh;
+        }
+        footer{
+            grid-area: head;
+            background-color: aquamarine;
+            color: white;
+            font-size: 2em;
+            text-align: center;
+        }
+        .s1{
+            grid-area: s1;
+            background-color: blueviolet;
+            font-size: 2em;
+            text-align: center;
+        }
+        .s2{
+            grid-area: s2;
+            background-color: rgb(37, 1, 28);
+            color: white;
+            font-size: 2em;
+            text-align: center;
+
+        }
+        .s4{
+            grid-area: s4;
+            background-color: bisque;
+            color: white;
+            font-size: 2em;
+            text-align: center;
+        }
+        .s3{
+            grid-area: s3;
+            background-color: darkkhaki;
+            color: white;
+            font-size: 2em;
+            text-align: center;
+        }
+        .s5{
+            grid-area: s5;
+            background-color: aquamarine;
+            color: white;
+            font-size: 2em;
+            text-align: center;
+        }
+
+
+     
+    </style>
+</head>
+<body>
+    <main>
+        <header>ESTO ES EL HEADER</header>
+        <section class="sidebar">SIDEBAR</section>
+        <section class="s1">Seccion 1</section>
+        <section class="s2">Seccion 2</section>
+        <section class="s3">Seccion 3</section>
+        <section class="s4">Seccion 4</section>
+        <section class="s5">Seccion 5</section>
+        <footer>FOOTER</footer>
+    </main>
+</body>
+</html>

@@ -21,8 +21,8 @@ main{
     background-color: lightsalmon;
 }
 .footer{
-    grid-column 1/3;
-    text-align: center;
+    grid-column: 1 / 3;
+    text-align: left;
     background-color: coral;
 
 }
